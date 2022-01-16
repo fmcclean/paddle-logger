@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '3bvi&yp3(p-i@)23*2+onr@#0rzdt73hr^fu25m)*m9d3ie1c3'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = bool(os.getenv('DEBUG', False))
 
 ALLOWED_HOSTS = ['paddlelogger.pythonanywhere.com']
 
